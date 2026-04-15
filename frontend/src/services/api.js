@@ -1,13 +1,13 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL,
+  baseURL: "https://hospital-backend-jotk.onrender.com/api",
   headers: {
     'Content-Type': 'application/json',
   },
 });
 
-// Request interceptor to add JWT token
+// Request interceptor
 API.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('hms_token');
@@ -19,7 +19,7 @@ API.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-// Response interceptor for error handling
+// Response interceptor
 API.interceptors.response.use(
   (response) => response,
   (error) => {
