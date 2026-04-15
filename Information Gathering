@@ -1,0 +1,113 @@
+Hospital Management System (HMS)
+1. Problem Definition
+
+The Hospital Management System (HMS) is a database-driven application designed to efficiently manage and store information related to hospital operations such as patient records, doctor details, appointments, prescriptions, billing, and departmental data. The system aims to replace the manual record-keeping process with a computerized system that ensures accuracy, quick retrieval of information, reduced redundancy, and improved overall hospital workflow.
+
+2. Stakeholders
+
+The major stakeholders involved in the system are:
+
+Administrator – Manages system access, hospital departments, and staff records.
+
+Doctor – Views patient information, diagnoses patients, and issues prescriptions.
+
+Receptionist – Registers patients and schedules appointments.
+
+Patient – Books appointments and views medical and billing information.
+
+Pharmacist – Manages medicine inventory and issues medicines.
+
+Billing Staff – Generates and maintains patient bills and payment records.
+
+3. System Objectives
+
+The main objectives of the Hospital Management System are:
+
+To maintain a centralized database of patients, doctors, and hospital departments.
+
+To automate appointment scheduling and record maintenance.
+
+To generate prescriptions and manage medicine inventory.
+
+To manage billing and payment details efficiently.
+
+To reduce paperwork and improve data security and accuracy.
+
+To provide fast and reliable access to hospital records.
+
+4. Functional Requirements
+4.1 Patient Module
+
+Register new patients.
+
+View personal details and medical history.
+
+Book and view appointments.
+
+View bills and payment status.
+
+4.2 Doctor Module
+
+View assigned appointments.
+
+Access patient medical records.
+
+Create and update prescriptions.
+
+4.3 Administrator Module
+
+Add, update, and delete doctor and staff records.
+
+Manage hospital departments.
+
+Generate system reports.
+
+4.4 Pharmacy Module
+
+Add and update medicine details.
+
+Manage medicine stock.
+
+Issue medicines based on prescriptions.
+
+4.5 Billing Module
+
+Generate patient bills.
+
+Update payment status.
+
+Maintain billing history.
+
+5. Non-Functional Requirements
+
+The system should provide secure access with user authentication.
+
+The database should ensure data consistency and integrity.
+
+The system should have fast response time for queries.
+
+The system should be user-friendly and easy to navigate.
+
+The system should support backup and recovery of data.
+
+6. Data Requirements
+
+The system must store the following information:
+
+Patient Data: Patient ID, Name, Age, Gender, Address, Phone Number
+
+Doctor Data: Doctor ID, Name, Specialization, Contact Number, Department
+
+Department Data: Department ID, Department Name, Location
+
+Appointment Data: Appointment ID, Date, Time, Patient ID, Doctor ID, Status
+
+Prescription Data: Prescription ID, Date, Patient ID, Doctor ID
+
+Medicine Data: Medicine ID, Name, Price, Stock Quantity
+
+Billing Data: Bill ID, Patient ID, Bill Date, Amount, Payment Status
+
+7. Scope of the System
+
+The scope of this system includes managing patient registration, appointment scheduling, doctor and department information, prescription generation, medicine inventory, and billing processes. The system does not include advanced hospital functionalities such as insurance claim processing or integration with external laboratory systems.
