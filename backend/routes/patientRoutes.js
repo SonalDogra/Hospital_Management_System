@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const controller = require('../controllers/patientController');
-//const auth = require('../middleware/auth');
+const auth = require('../middleware/auth');
 
-//router.use(auth);
+router.use(auth);
 router.get('/', controller.getAll);
 router.get('/:id', controller.getById);
 router.post('/', controller.create);
