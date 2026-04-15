@@ -16,10 +16,16 @@ const dashboardRoutes = require('./routes/dashboardRoutes');
 const app = express();
 
 // Middleware
-app.use(cors({
-  origin: "*",
+const corsOptions = {
+  origin: [
+    "http://localhost:5173",
+    "https://silk-kappa.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
-}));
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
